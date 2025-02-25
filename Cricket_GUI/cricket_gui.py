@@ -50,20 +50,6 @@ if the computer scores more than the player, the computer wins.
     messagebox.showinfo('help', message)
 
 
-def reset_game():
-    sum_computer = 0
-    sum_player = 0
-    computer_bats = False
-
-    display_player.config(text='')
-    display_computer.config(text='')
-
-    score_display_player.config(text='')
-    score_display_computer.config(text='')
-
-    info_label.config(text='Player bats first!.')
-
-
 def check_score():
     """
     checks who won the game and asks if player wants to play-again.
@@ -79,10 +65,18 @@ def check_score():
     else:
         info_label.config(text=f"Computer wins for {sum_computer} runs.")
 
-
-
     if messagebox.askyesno('GAME OVER', 'It  was  a  good  game. \n Wanna  Play  Again ??!.'):
-        reset_game()
+        sum_computer = 0
+        sum_player = 0
+        computer_bats = False
+
+        display_player.config(text='')
+        display_computer.config(text='')
+
+        score_display_player.config(text='')
+        score_display_computer.config(text='')
+
+        info_label.config(text='Player bats first!.')
     else:
         window.destroy()
 
@@ -109,7 +103,7 @@ def button_press(p_num):
         else:
             # increment score of computer
             sum_computer += c_num
-            score_display_computer.config(text=f"score : {sum_computer}")
+            score_display_computer.config(text=sum_computer)
 
             # if computer scores more than total runs of player(sum_player), game ends
             if sum_computer > sum_player:
@@ -130,7 +124,7 @@ def button_press(p_num):
         else:
             # increment score of player
             sum_player += p_num
-            score_display_player.config(text=f'score : {sum_player}')
+            score_display_player.config(text=sum_player)
 
 
 # ---------------- END METHODS -----------------------------------------------------------------
