@@ -70,6 +70,17 @@ At this time, the game runs smoothly on Windows. However, there might be occasio
 
 ---
 
+
+## 📺 Demo
+
+
+
+https://github.com/user-attachments/assets/54605207-b562-4fea-8f9e-add7d2a8b473
+
+
+
+---
+
 ## 🎮 Final Thoughts
 
 Cricket is a game of strategy, luck, and skill—and **Classic Cricket** brings all of that to your fingertips! Whether you win or lose, the thrill of each ball keeps the excitement alive. So, what are you waiting for? **Hit that 'Run' button and start playing now!** 🏆🔥
